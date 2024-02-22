@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+i{
+    font-size: 20px;
+}
+
+.title_icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+}
+
+
+.full_container {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px 0;
+}
+
+.header {
+   background-color: #f5f5f5;
+   border-top: 3px solid rgba(0, 0, 0, 0.7);
+   padding: 40px;
+   text-align: center;
+}
+
+.header h2{
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    margin: 0 auto; /* Centers the container horizontally */
+    display: grid;
+    background-color: #f5f5f5;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.7);
+    border-top: 3px solid rgba(0, 0, 0, 0.7);
+}
+
+.container .left_side{
+    position: relative;
+    padding: 40px;
+    border-right: 3px solid rgba(0, 0, 0, 0.7);
+}
+
+.contacts, .skills, .languages, .hobbies .references, .about, .work .education{
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.8);
+}
+
+.contacts ul li, .skills ul li, .languages ul li{
+    list-style: none;
+}
+
+.contacts ul li{
+    margin-bottom: 10px;
+}
+
+.references{
+    margin-top: 25px;
+}
+
+.container .right_side{
+    position: relative;
+    background: #f5f5f5;
+    padding: 40px;
+}
+
+.container .right_side .work .box{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    margin: 20px 0;
+}
+
+.container .right_side .work .box .year_company{
+    min-width: 150px;
+}
+
+.container .right_side .work .box .year_company h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.container .right_side .work .box .year_company h4{
+    text-transform: uppercase;
+    color: #003147;
+    font-size: 16px;
+}
+
+.work__title{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.work__place{
+    margin-bottom: 10px;
+}
+
+/* Education */
+.education .box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 20px 0;
+}
+
+.education__year{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.education__school{
+    text-transform: uppercase;
+    color: #003147;
+}
+
+.education__details ul{
+    margin-top: 10px;
+}
+
+/* Languages */
+.languages {
+    margin-top: 20px;
+}
+
+.languages ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.languages li {
+    margin-bottom: 10px;
+}
+
+.languages .text {
+    display: inline-block;
+    width: 100px;
+}
+
+.languages .percent {
+    display: inline-block;
+    width: calc(100% - 100px);
+    margin-left: 10px;
+    position: relative;
+}
+
+.languages .slider {
+    height: 5px;
+    background-color: #000;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.languages input[type="range"] {
+    width: 100%;
+    height: 10px;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.languages input[type="range"]::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    background-color: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
