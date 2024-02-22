@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.container .left_side{
+    position: relative;
+    background: #2d3a4b;
+    padding: 40px;
+}
+
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.profileText .imgBox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.languages, .about, .references, .hobbies{
+    color: #fff;
+    font-weight: 300;
+}
+
+.languages {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+    padding-bottom: 20px; 
+}
+
+
+.title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #8e7e17;
+}
+
+.languages ul li{
+    list-style: none;
+}
+
+.languages .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.languages .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #8e7e17;
+}
+
+/* HOBBIES */
+.hobbies ul {
+    margin-bottom: 10px; 
+    padding-bottom: 20px; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hobbies ul li{
+    list-style: none;
+}
+
+/* REFERENCES */
+.reference{
+    margin-top: 20px;
+}
+
+
+
+/* RIGHT SIDE */
+.container .right_side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+
+/* Personal Info */
+.personalInfo{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.personalInfo .name-title{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.personalInfo .name-title .name{
+    text-transform: uppercase;
+    max-width: 200px;
+    word-wrap: break-word !important;
+    color: #2d3a4b;
+}
+
+.personalInfo .name-title .personal_title{
+    text-transform: uppercase;
+    top: 0;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.personalInfo .contactInfo ul li{
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: 1rem;
+}
+
+.container .right_side .work{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.container .right_side .work:last-child{
+    margin-bottom: 0;
+}
+
+.container .right_side .title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.container .right_side .work .box{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    margin: 20px 0;
+}
+
+.container .right_side .work .box .year_company{
+    min-width: 150px;
+}
+
+.container .right_side .work .box .year_company h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.container .right_side .work .box .year_company h4{
+    text-transform: uppercase;
+    color: #003147;
+    font-size: 16px;
+}
+
+/* Education */
+.education .box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 20px 0;
+}
+
+.education .box .school-year h4{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+/* Skills */
+.skills{
+    margin-top: 50px;
+
+}
+.skills .box ul{
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
